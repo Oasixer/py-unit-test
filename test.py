@@ -47,13 +47,11 @@ Exiting program.''')
                     msg = f' with message\nERROR: {error}'
                 else:
                     msg = f'''\
- without a message because SOMEONE (not gonna name any names)
-was too lazy to add an assertion message PERSEPHONE YOU IGNORANT SLUT
-Now look where we are... It's not looking good chief'''
+ without a message'''
 
                 print(f"Test #{num} {test['name']}   Failed{msg}\n")
         delta_time = datetime.datetime.now() - start_time
         print(f'\nPassed {num_passed}/{num_tests} tests in {delta_time}')
 
 if __name__ == "__main__":
-    GraphTest().run()
+    Test().run()
